@@ -1,0 +1,12 @@
+useDynLib(BayesH)
+# export functions for users
+export(bayesModel.fit)
+export(get.scale.bayesH)
+# Import package dependencies
+importFrom(graphics, abline, plot)
+importFrom(stats, cor, var)
+# S3 methods
+S3method(plot, BayesH)
+S3method(predict,BayesH)
+S3method(summary,BayesH)
+
